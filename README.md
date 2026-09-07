@@ -2,9 +2,9 @@
 
 **Walk into the bank with your own number.**
 
-**Live demo:** [shubhangini67.github.io/nirnay](https://shubhangini67.github.io/nirnay/) · **Repo:** [github.com/shubhangini67/nirnay](https://github.com/shubhangini67/nirnay)
+**Live demo:** [nirnay-mu.vercel.app](https://nirnay-mu.vercel.app) · **Repo:** [github.com/shubhangini67/nirnay](https://github.com/shubhangini67/nirnay)
 
-[![Live](https://img.shields.io/badge/Live_demo-GitHub_Pages-0F6E56)](https://shubhangini67.github.io/nirnay/)
+[![Live](https://img.shields.io/badge/Live_demo-Vercel-000?logo=vercel)](https://nirnay-mu.vercel.app)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](#stack)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](#stack)
 [![React](https://img.shields.io/badge/React-19-087EA4?logo=react)](#stack)
@@ -35,7 +35,7 @@ npm test
 npm run dev
 ```
 
-Open the URL Vite prints (usually `http://localhost:5173`). Or the live app: [shubhangini67.github.io/nirnay](https://shubhangini67.github.io/nirnay/).
+Open the URL Vite prints (usually `http://localhost:5173`). Or the live app: [nirnay-mu.vercel.app](https://nirnay-mu.vercel.app).
 
 ```bash
 npm run build     # production build
