@@ -43,7 +43,7 @@ npm run build     # production build
 
 Nothing is stored on a server. Answers sit in `sessionStorage` on this browser only, and vanish when the tab does.
 
-**Five-minute video:** [nirnay-mu.vercel.app/walkthrough.html](https://nirnay-mu.vercel.app/walkthrough.html)
+**Five-minute guided walkthrough:** [nirnay-mu.vercel.app/walkthrough.html](https://nirnay-mu.vercel.app/walkthrough.html)
 
 ---
 
@@ -277,7 +277,7 @@ flowchart TD
 | **Lender amount** | FOIR on *documented* income (payslip or ITR), LTV on pledged asset | What you should take |
 | **Household amount** | FOIR on *cash the kitchen actually sees*, plus buffers and haircuts | The RM’s monthly target |
 
-Priya: a prime MNC file can print ₹14–18L. The house should use ~₹7.3L.
+Priya: a prime MNC file can print ₹14–18L. The house can carry ~₹7.6–8.3L; the walk-in ticket is ₹7.3L — a conservative wedding cap, not a point inside that band.
 Ravi: the branch uses ITR ÷ 12 and the shop. He lives on a slow month at the till.
 Anita: a scooter counter can still quote ₹70k–₹1.2L. Household is **₹0**.
 
@@ -341,7 +341,7 @@ borrower-copilot/
 ├── README.md          setup, features, architecture, screenshots, assumptions, live link
 ├── RULES.md           every threshold · rate band · FOIR · safety limit · assumption
 ├── RUNTHROUGHS.md     Priya, Ravi, Anita — questions, four outputs, negotiation cards
-├── WALKTHROUGH.md     five-minute video, design decisions, limits, next / cut
+├── WALKTHROUGH.md     five-minute guided walkthrough, design decisions, limits, next / cut
 ├── package.json
 ├── src/               app + engine
 ├── public/            favicon, screenshots, walkthrough player

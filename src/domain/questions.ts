@@ -283,7 +283,7 @@ export const QUESTIONS: Question[] = [
     field: "spouseIncome",
     must: false,
     title: "Does a spouse or partner earn? Their monthly take-home.",
-    help: "We count this on the household book, and on the lender book if they can co-apply.",
+    help: "We count 90% on the household book and 65% on the lender book. I do not treat them as a co-applicant unless you say they will sign.",
     moves: ["amount", "emi"],
     kind: "money",
     showIf: (a) => a.workType === "self_employed",

@@ -43,7 +43,8 @@ She can skip this whole extra list after the must-set and still get a brief (wid
 |---|---|
 | **O1** | **Borrow less.** A wedding should not sit on the last rupee of the ceiling. |
 | **O2 lender** | ₹14.5 L – ₹17.9 L. A prime MNC file can print a fat personal loan. |
-| **O2 household** | ₹7.6 L – ₹8.3 L. **Use ₹7.3 L.** |
+| **O2 household** | ₹7.6 L – ₹8.3 L — what the house can carry after FOIR, buffers and the 15% wedding haircut on EMI room. |
+| **Walk-in ticket** | **₹7.3 L** — a **conservative wedding cap** (88% of the household high). It is *below* the household band on purpose. A wedding should not sit on the last rupee. |
 | **O3** | Fair headline **10.8% – 12.8%**. All-in APR **11.7% – 13.7%** after 1.5% fee + GST. |
 | **O4** | Do not agree to more than **₹21,760** a month (48-month tenor). |
 
@@ -63,7 +64,7 @@ Stamp: **BORROW LESS** · personal loan
 |---|---|
 | Fair rate | 10.8% – 12.8% |
 | All-in APR (fee + GST) | 11.7% – 13.7% · fee 1.8% |
-| I will take at most | ₹7,30,000 |
+| I will take at most | ₹7,30,000 (conservative wedding cap, below the ₹7.6–8.3L household band) |
 | You may sanction | ₹14,50,000 – ₹17,90,000 |
 | EMI ceiling | ₹21,760 / month · 4 years |
 | Stress | Income −25% eats 42% of a thinner month |
@@ -99,24 +100,26 @@ Wants ₹15,00,000 for a second stock line and a delivery vehicle. He walked in 
 | Years this shop has been running | 14 | Rate notch, vintage |
 | Last ITR profit, for the year | ₹4,20,000 | Lender book (ITR ÷ 12) |
 | Shop / house you could pledge | ₹45,00,000 | Routes him to **LAP** |
-| Spouse monthly take-home | ₹18,000 | Household + lender (co-apply) |
+| Spouse monthly take-home | ₹18,000 (from the brief — she teaches) | Household book at 90%. Lender book at 65%. |
 | Extra the loan will earn each month | ₹18,000 | Household book at 35% |
 
-The demo persona also carries GST-registered = yes as a known fact from the assignment brief (not an extra question). He never saw: employer type, bonus share, card utilisation, bounce, savings (thin-savings haircut does not apply to a LAP).
+I do **not** mark him GST-registered. The brief never says he has a GST file. I do **not** treat his wife as a co-applicant. The brief says she earns; it does not say she will sign. Those two lifts are extra questions I cut, so they stay unanswered — not invented as yes.
+
+He never saw: employer type, bonus share, card utilisation, bounce, savings (thin-savings haircut does not apply to a LAP).
 
 ### Four outputs
 
 | | |
 |---|---|
 | **O1** | **Borrow** — on a **LAP**, not the personal loan he asked for. |
-| **O2 lender** | ₹16.7 L – ₹24.0 L (LTV on the shop, FOIR on ITR + co-applicant). |
+| **O2 lender** | ₹14.0 L – ₹20.1 L (LTV on the shop, FOIR on ITR + 65% of his wife’s pay). |
 | **O2 household** | ₹14.8 L – ₹16.6 L. **Use ₹15,00,000** — the ask fits. |
 | **O3** | **10.5% – 13.8%**. Score unknown, so this is a **wide** band that prices the shop, not a fake 300. All-in APR **10.8% – 14.1%**. Confidence capped at **56%** because there is no bureau. |
 | **O4** | EMI ceiling **₹25,000** on a 108-month tenor. |
 
 **Why LAP.** Unencumbered shop worth ₹45 lakh, ask ₹15 lakh, business purpose. Unsecured would be smaller and costlier. The card says: do not walk in for a personal loan.
 
-**Two books.** Lender uses ITR (₹35,000 a month) plus GST lift plus the wife in full as co-applicant. The house uses a slow cash month (₹40,000) plus 90% of her pay plus 35% of the extra the stock line is supposed to earn. Those are supposed to disagree.
+**Two books.** Lender uses ITR (₹35,000 a month) plus 65% of his wife’s teaching pay. I do not add a GST-file lift and I do not treat her as a co-applicant — the brief never says either. The house uses a slow cash month (₹40,000) plus 90% of her pay plus 35% of the extra the stock line is supposed to earn. Those two books are supposed to disagree.
 
 **Thin savings.** Two months of savings would have haircut an unsecured ticket. On a LAP the shop is the airbag, so I do not apply the same 30% cut. That is a rule I will defend.
 
@@ -131,7 +134,7 @@ Stamp: **BORROW** · loan against property (shop)
 | Fair rate | 10.5% – 13.8% · unknown score, wide band, not 300 |
 | All-in APR (fee + GST) | 10.8% – 14.1% · fee 1.2% |
 | I will take at most | ₹15,00,000 |
-| You may sanction | ₹16,70,000 – ₹24,00,000 |
+| You may sanction | ₹14,00,000 – ₹20,10,000 |
 | EMI ceiling | ₹25,000 / month · 9 years |
 | Product | LAP — do not walk in for a personal loan |
 
@@ -202,7 +205,7 @@ Stamp: **DON’T BORROW** · two-wheeler
 
 ## What the three together prove
 
-- Lender amount and household amount are different for all three. Priya could be sold ~₹16 lakh and should use ~₹7.3 lakh. Ravi could be sold more LAP than ₹15 lakh and should still use ₹15 lakh. Anita could be sold a scooter and should use ₹0.
+- Lender amount and household amount are different for all three. Priya could be sold ~₹16 lakh; the house can carry ~₹7.6–8.3 lakh and the walk-in ticket is ₹7.3 lakh as a wedding cap. Ravi could be sold more LAP than ₹15 lakh and should still use ₹15 lakh. Anita could be sold a scooter and should use ₹0.
 - Don’t borrow fires (Anita). Borrow less fires (Priya). Borrow fires (Ravi) only after the product is made honest (LAP).
 - Unknown score (Ravi, Anita) is a wide band with a confidence cap. It is not 300.
 - Adaptive questions: three different lists.

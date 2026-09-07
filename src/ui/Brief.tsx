@@ -57,7 +57,11 @@ export function Brief({
           <div className="v">
             {inr(result.householdAmount.low, true)} – {inr(result.householdAmount.high, true)}
           </div>
-          <p className="sub">{result.useAmountWhy}</p>
+          <p className="sub">
+            {result.verdict === "borrow_less" && result.useAmount < result.householdAmount.low
+              ? "What the house can carry. The walk-in ticket below is a tighter wedding cap, not a point inside this band."
+              : result.useAmountWhy}
+          </p>
         </article>
       </div>
 
@@ -85,7 +89,11 @@ export function Brief({
           <p className="note">{result.emiCeilingWhy}</p>
         </article>
         <article className="panel out">
-          <div className="k">Walk-in ticket · use this</div>
+          <div className="k">
+            {result.verdict === "borrow_less" && result.useAmount < result.householdAmount.low
+              ? "Walk-in ticket · conservative wedding cap"
+              : "Walk-in ticket · use this"}
+          </div>
           <div className="v">{inr(result.useAmount, true)}</div>
           <p className="note">{result.useAmountWhy}</p>
         </article>

@@ -58,7 +58,11 @@ export function NegotiationCard({
             <p>Typical fee used: {pct(result.feePct)} of the ticket.</p>
           </div>
           <div>
-            <p className="k">I will take at most</p>
+            <p className="k">
+              {result.verdict === "borrow_less" && result.useAmount < result.householdAmount.low
+                ? "I will take at most (wedding cap)"
+                : "I will take at most"}
+            </p>
             <p>
               <b>{inr(result.useAmount)}</b>
             </p>

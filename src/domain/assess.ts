@@ -68,7 +68,7 @@ export function recogniseIncome(a: Answers, knobs: Knobs = defaultKnobs()): {
   whyHousehold: string;
 } {
   const spouse = a.spouseIncome ?? 0;
-  const co = a.coApplicant === true || (a.coApplicant == null && spouse > 0);
+  const co = a.coApplicant === true;
   const spouseL = spouse * (co ? 1 : R.spouseLenderShare);
   const spouseH = spouse * R.spouseHouseShare;
   let extraEarn = 0;
@@ -539,10 +539,13 @@ export function assess(a: Answers, knobs: Knobs = defaultKnobs()): Assessment {
       : verdict === "borrow_less"
         ? roundTicket(Math.min(ask, houseHigh * (consumptionPurpose(a) ? 0.88 : 1)))
         : Math.min(ask, houseHigh);
+  const weddingCap = consumptionPurpose(a) && verdict === "borrow_less" && useAmount < houseLow;
   const useAmountWhy =
     verdict === "dont_borrow"
       ? "Use ₹0. The number you should carry into the branch is zero, even if a counter quotes more."
-      : `Use ${inr(useAmount)} — the household ceiling, not the ${inr(lendHigh)} a lender might still sanction.`;
+      : weddingCap
+        ? `Walk-in ticket ${inr(useAmount)} is a conservative wedding cap — 88% of the household high of ${inr(houseHigh)}. The house can carry ${inr(houseLow)}–${inr(houseHigh)}; do not sit on the last rupee.`
+        : `Use ${inr(useAmount)} — the household ceiling, not the ${inr(lendHigh)} a lender might still sanction.`;
 
   const shownEmi =
     verdict === "dont_borrow" ? 0 : Math.max(0, Math.round(houseRoom / 10) * 10);

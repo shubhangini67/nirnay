@@ -17,6 +17,8 @@ describe("three borrowers", () => {
     expect(priya.householdAmount.high).toBeLessThanOrEqual(8_50_000);
     expect(priya.lenderAmount.high).toBeGreaterThan(priya.householdAmount.high);
     expect(priya.useAmount).toBeLessThan(8_00_000);
+    expect(priya.useAmount).toBeLessThan(priya.householdAmount.low);
+    expect(priya.useAmountWhy).toMatch(/wedding cap/i);
     expect(priya.rate.low).toBeGreaterThanOrEqual(10.5);
     expect(priya.rate.high).toBeLessThan(14.5);
     expect(priya.rate.aprLow).toBeGreaterThan(priya.rate.low);
@@ -36,6 +38,9 @@ describe("three borrowers", () => {
     expect(ravi.rate.low).toBeLessThan(16);
     expect(ravi.confidence).toBeLessThanOrEqual(0.56);
     expect(ravi.income.lender).toBeLessThan(ravi.income.household);
+    expect(PERSONAS[1].answers.gstRegistered).toBeUndefined();
+    expect(PERSONAS[1].answers.coApplicant).toBeUndefined();
+    expect(ravi.income.whyLender).not.toMatch(/GST/i);
   });
 
   it("Anita: don't borrow, scooter is not the product she should take", () => {

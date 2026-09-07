@@ -1,9 +1,9 @@
-# Five-minute walkthrough
+# Five-minute guided walkthrough
 
-**Video:** [nirnay-mu.vercel.app/walkthrough.html](https://nirnay-mu.vercel.app/walkthrough.html)  
+**Guided walkthrough:** [nirnay-mu.vercel.app/walkthrough.html](https://nirnay-mu.vercel.app/walkthrough.html)  
 **Live app:** [nirnay-mu.vercel.app](https://nirnay-mu.vercel.app)
 
-The player is a timed tour of the same screens you would click in five minutes. Pause it. Open the live app in another tab and follow along.
+The player is a timed screenshot tour of the same screens you would click in five minutes — a written walkthrough you can replay, not a filmed video. Pause it. Open the live app in another tab and follow along. The challenge allows a written walkthrough; this is that.
 
 ---
 
@@ -25,7 +25,7 @@ Four numbered blocks. Two amounts are visually twins so you cannot miss that the
 
 Ochre notes are guesses. I tell you what I do not know.
 
-**Priya in one line:** borrow less than ₹8L. Use ~₹7.3L. Fair 10.8–12.8%. EMI ceiling ₹21,760.
+**Priya in one line:** borrow less than ₹8L. Household band ~₹7.6–8.3L; walk-in ticket ₹7.3L is a conservative wedding cap. Fair 10.8–12.8%. EMI ceiling ₹21,760.
 
 Then open **Ravi**: personal-loan ask becomes a shop LAP. Unknown score is a wide band, not 300. Use ₹15L.
 

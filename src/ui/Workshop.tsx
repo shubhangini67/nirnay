@@ -154,8 +154,17 @@ export function Workshop({
                   <td>{inr(result.emiCeiling)}</td>
                 </tr>
                 <tr>
-                  <th>Use this ticket</th>
-                  <td>{inr(result.useAmount)}</td>
+                  <th>
+                    {result.verdict === "borrow_less" && result.useAmount < result.householdAmount.low
+                      ? "Walk-in ticket (wedding cap)"
+                      : "Use this ticket"}
+                  </th>
+                  <td>
+                    {inr(result.useAmount)}
+                    {result.verdict === "borrow_less" && result.useAmount < result.householdAmount.low
+                      ? " · conservative cap, below the household band"
+                      : ""}
+                  </td>
                 </tr>
               </tbody>
             </table>
