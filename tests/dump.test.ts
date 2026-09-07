@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dumpPersona } from "./dump";
+import { dumpPersona } from "../src/domain/dump";
 
 describe("persona dump", () => {
   it("prints three complete traces", () => {

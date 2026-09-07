@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { assess } from "./assess";
-import { PERSONAS } from "./personas";
-import { QUESTIONS, additionalQuestions, missingMust, mustQuestions, visibleQuestions } from "./questions";
-import type { Answers } from "./types";
+import { assess } from "../src/domain/assess";
+import { PERSONAS } from "../src/domain/personas";
+import { QUESTIONS, additionalQuestions, missingMust, mustQuestions, visibleQuestions } from "../src/domain/questions";
+import type { Answers } from "../src/domain/types";
 
 describe("three borrowers", () => {
   const priya = assess(PERSONAS[0].answers);

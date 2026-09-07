@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { aprFromFee, emi, inr, principalFromEmi } from "./money";
+import { aprFromFee, emi, inr, principalFromEmi } from "../src/domain/money";
 
 describe("money", () => {
   it("formats Indian grouping", () => {

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nirnay — five-minute walkthrough</title>
+    <style>
+      :root { --ink: #12241f; --muted: #5b6e68; --bg: #eef6f1; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+      header { padding: 1rem 1.2rem; display: flex; justify-content: space-between; gap: 1rem; align-items: center; flex-wrap: wrap; }
+      h1 { margin: 0; font-size: 1.15rem; }
+      a { color: #0f6e56; }
+      .stage { max-width: 1100px; margin: 0 auto; padding: 0 1rem 3rem; }
+      img { width: 100%; border-radius: 16px; box-shadow: 0 12px 40px rgba(18,36,31,.12); background: #fff; }
+      .cap { margin: .8rem 0 1.4rem; font-size: 1.05rem; line-height: 1.45; }
+      .bar { height: 6px; background: #d4e0db; border-radius: 99px; overflow: hidden; margin: 0 0 1rem; }
+      .bar i { display: block; height: 100%; width: 0; background: #0f6e56; }
+      .row { display: flex; gap: .5rem; flex-wrap: wrap; }
+      button { border: 1.5px solid #0f6e56; background: #fff; color: #0f6e56; border-radius: 999px; padding: .4rem .9rem; font-weight: 700; cursor: pointer; }
+      button.primary { background: #0f6e56; color: #fff; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nirnay · five-minute walkthrough</h1>
+      <div class="row">
+        <a href="./">Open the live app</a>
+      </div>
+    </header>
+    <div class="stage">
+      <div class="bar"><i id="prog"></i></div>
+      <p id="kicker" style="letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;color:var(--muted);font-weight:700;"></p>
+      <img id="shot" alt="Walkthrough slide" />
+      <p class="cap" id="cap"></p>
+      <div class="row">
+        <button id="prev">Back</button>
+        <button class="primary" id="play">Pause</button>
+        <button id="next">Next</button>
+      </div>
+    </div>
+    <script>
+      const slides = [
+        { src: "./screenshots/01-home.png", k: "0:00 · Home", c: "Four outputs in plain words. No login. Open Priya, Ravi or Anita, or start the self-check." },
+        { src: "./screenshots/02-questions.png", k: "0:30 · Must questions", c: "Nine must questions. One at a time. A salaried engineer and a kirana owner do not see the same list." },
+        { src: "./screenshots/03-extras.png", k: "1:10 · Optional extras", c: "Each extra moves a number. Skip one, or skip the rest. Silence keeps the band wide. It is not a zero." },
+        { src: "./screenshots/04-brief-priya.png", k: "1:50 · Priya · O1–O4", c: "Borrow less. Lender may sanction ₹14–18L. She should use ₹7.3L. Fair rate 10.8–12.8%. EMI ceiling ₹21,760." },
+        { src: "./screenshots/05-card.png", k: "2:30 · Walk-in card", c: "The sentence she holds up at the desk: fair band, APR with fee, ticket, EMI ceiling." },
+        { src: "./screenshots/06-offer.png", k: "3:00 · Offer checker", c: "They quote 14%. The checker says a bit high. Ask them to match 12.8% on the Key Facts Statement." },
+        { src: "./screenshots/08-brief-ravi.png", k: "3:25 · Ravi", c: "He asked for a personal loan. The file becomes a loan against the shop. Unknown score is a wide band, not 300." },
+        { src: "./screenshots/09-brief-anita.png", k: "4:00 · Anita", c: "Don’t borrow. Bounce plus 32% app paper. A scooter counter may still pitch ₹70k–₹1.2L. Household is ₹0." },
+        { src: "./screenshots/07-workshop.png", k: "4:25 · Rule workshop", c: "Change household FOIR or LAP LTV. The brief moves. Same engine as the screens. This is the follow-up." },
+        { src: "./screenshots/10-rules.png", k: "4:50 · Rules", c: "Every threshold: what · value · why · source. Same catalog as RULES.md." }
+      ];
+      const hold = 30000;
+      let i = 0, t0 = Date.now(), playing = true, timer;
+      const img = document.getElementById("shot");
+      const cap = document.getElementById("cap");
+      const kicker = document.getElementById("kicker");
+      const prog = document.getElementById("prog");
+      const play = document.getElementById("play");
+      function show(n) {
+        i = (n + slides.length) % slides.length;
+        img.src = slides[i].src;
+        cap.textContent = slides[i].c;
+        kicker.textContent = slides[i].k;
+        t0 = Date.now();
+      }
+      function tick() {
+        if (!playing) return;
+        const p = Math.min(1, (Date.now() - t0) / hold);
+        prog.style.width = p * 100 + "%";
+        if (p >= 1) show(i + 1);
+      }
+      document.getElementById("prev").onclick = () => show(i - 1);
+      document.getElementById("next").onclick = () => show(i + 1);
+      play.onclick = () => {
+        playing = !playing;
+        play.textContent = playing ? "Pause" : "Play";
+        t0 = Date.now();
+      };
+      show(0);
+      setInterval(tick, 80);
+    </script>
+  </body>
+</html>

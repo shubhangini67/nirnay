@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "personas": "vitest run src/domain/personas.test.ts"
+    "personas": "vitest run tests/personas.test.ts"
   },
   "dependencies": {
     "react": "^19.1.0",

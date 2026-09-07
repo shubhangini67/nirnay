@@ -10,7 +10,7 @@
 [![React](https://img.shields.io/badge/React-19-087EA4?logo=react)](#stack)
 [![Tests](https://img.shields.io/badge/Vitest-15_passing-0F6E56)](#run-locally)
 
-Nirnay is a **borrower self-check for India**. No login. No bureau. No server. You answer a short list of questions. It prints four numbers and a one-page card you can hold up at the desk.
+The four deliverables sit at the repository root: [`README.md`](README.md) · [`RULES.md`](RULES.md) · [`RUNTHROUGHS.md`](RUNTHROUGHS.md) · [`WALKTHROUGH.md`](WALKTHROUGH.md). Working app in `src/`, tests in `tests/`, static files in `public/`.
 
 **This repository is owned and authored solely by Shubhangini.** There are no other contributors.
 
@@ -43,6 +43,31 @@ npm run build     # production build
 
 Nothing is stored on a server. Answers sit in `sessionStorage` on this browser only, and vanish when the tab does.
 
+**Five-minute video:** [nirnay-mu.vercel.app/walkthrough.html](https://nirnay-mu.vercel.app/walkthrough.html)
+
+---
+
+## Features
+
+- Adaptive interview: ~9 must questions, then a short extra list that each moves a number
+- Four outputs on one brief: verdict, two amounts, fair rate band + APR, EMI ceiling
+- Printable walk-in / negotiation card
+- Offer checker against a pasted lender quote
+- Rule workshop: drag a FOIR or LTV, watch Priya / Ravi / Anita move
+- Three demo files on the home page (not KYC)
+
+---
+
+## Assumptions
+
+Every threshold lives in [`RULES.md`](RULES.md) as **what · value · why · source**. The short version:
+
+- India, rupees, FOIR-style affordability, RBI-style all-in APR (fee × 1.18 GST)
+- Lender book ≠ household book. Use the household number
+- Unknown credit score is a wide band, never 300. Skipped extras are not zeros
+- Rate bands are reasoned from public product pages, not a live 2026 bank grid
+- Where a cell says “my judgement”, it is my judgement
+
 ---
 
 ## Product tour
@@ -53,61 +78,61 @@ Screenshots, in the order a borrower actually clicks.
 
 Four outputs in plain words. Three sample files (Priya, Ravi, Anita) — not anyone’s KYC. Home is one tap away from every screen.
 
-![Home](docs/screenshots/01-home.png)
+![Home](public/screenshots/01-home.png)
 
 ### 2. Nine must questions
 
 One question at a time. Salary, shop, and gig do not see the same list.
 
-![Must questions](docs/screenshots/02-questions.png)
+![Must questions](public/screenshots/02-questions.png)
 
 ### 3. Extras are optional
 
 Each extra wears a chip: *moves rate*, *moves amount*. Skip one, or skip the rest and still print a brief. Silence keeps the band wide. It does not invent a zero.
 
-![Optional extras](docs/screenshots/03-extras.png)
+![Optional extras](public/screenshots/03-extras.png)
 
 ### 4. Brief — Priya (salaried, wedding)
 
 Borrow less than ₹8L. The bank number and the household number are not the same.
 
-![Priya brief](docs/screenshots/04-brief-priya.png)
+![Priya brief](public/screenshots/04-brief-priya.png)
 
 ### 5. Walk-in card
 
 One page for the desk. Print it. The first sentence is what she actually says.
 
-![Walk-in card](docs/screenshots/05-card.png)
+![Walk-in card](public/screenshots/05-card.png)
 
 ### 6. Offer checker
 
 They quote 14%. The card already had the band. This screen names it: fair / a bit high / expensive / predatory, with APR including fee + GST.
 
-![Offer checker](docs/screenshots/06-offer.png)
+![Offer checker](public/screenshots/06-offer.png)
 
 ### 7. Rule workshop
 
 For the live follow-up. Load a borrower. Drag household FOIR or LAP LTV. The brief moves. Same engine as the screens.
 
-![Rule workshop](docs/screenshots/07-workshop.png)
+![Rule workshop](public/screenshots/07-workshop.png)
 
 ### 8. Ravi — shop loan, unknown score
 
 He asked for a personal loan. The file becomes a **loan against the shop**. Unknown is a wide band, not 300.
 
-![Ravi brief](docs/screenshots/08-brief-ravi.png)
+![Ravi brief](public/screenshots/08-brief-ravi.png)
 
 ### 9. Anita — don’t borrow
 
 A bounce plus 32% app paper. Don’t borrow. A scooter counter may still pitch ₹70k–₹1.2L. Household is **₹0**.
 
-![Anita brief](docs/screenshots/09-brief-anita.png)
+![Anita brief](public/screenshots/09-brief-anita.png)
 
 ### 10. Every rule
 
 The same catalog as `RULES.md`, inside the app.
 
-![Rules](docs/screenshots/10-rules.png)
+![Rules](public/screenshots/10-rules.png)
 
 ---
 
@@ -302,7 +327,7 @@ Headline rate is not the cost. All-in APR is the IRR on net disbursal after **fe
 | Engine | Pure TypeScript in `src/domain/` | Zero React imports. Change a constant — or a workshop slider — and the number moves |
 | Routes | Hash (`#/ask`, `#/brief`, `#/card`) | Static host. No server rewrite. |
 | State | `sessionStorage` | No login, no PII on a server, tab-scoped |
-| Tests | Vitest — Priya / Ravi / Anita + question design | Domain rules, not button clicks |
+| Tests | Vitest in `tests/` — Priya / Ravi / Anita + question design | Domain rules, not button clicks |
 | Style | Custom CSS · Syne + Plus Jakarta Sans | Readable in daylight, printable card |
 
 I did not add auth, Postgres, Redis, Docker, a bureau, or a model. They would store people and slow the first run from this README.
@@ -312,13 +337,15 @@ I did not add auth, Postgres, Redis, Docker, a bureau, or a model. They would st
 ## Repository map
 
 ```
-src/domain/     types, constants, questions, assess, money, personas   ← no UI
-src/ui/         Home, Interview, Brief, Card, Offer, Workshop, Rules
-src/styles.css  daylight layout
-docs/screenshots/
-RULES.md        every threshold: what · value · why · source
-RUNTHROUGHS.md  Priya, Ravi, Anita
-WALKTHROUGH.md  five-minute tour, what I would add, what I would cut
+borrower-copilot/
+├── README.md          setup, features, architecture, screenshots, assumptions, live link
+├── RULES.md           every threshold · rate band · FOIR · safety limit · assumption
+├── RUNTHROUGHS.md     Priya, Ravi, Anita — questions, four outputs, negotiation cards
+├── WALKTHROUGH.md     five-minute video, design decisions, limits, next / cut
+├── package.json
+├── src/               app + engine
+├── public/            favicon, screenshots, walkthrough player
+└── tests/             Vitest — personas, money, question design
 ```
 
 | File | What |

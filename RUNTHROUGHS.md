@@ -12,7 +12,19 @@ Wants ₹8,00,000 personal loan for a wedding.
 
 ### Questions the app asked
 
-**Must** — 9 questions: purpose, amount, product guess, age, how you earn, take-home, existing EMIs, household spend, score.
+**Must**
+
+| Question | Her answer |
+|---|---|
+| What is the money for? | A wedding |
+| How much do you want to take? | ₹8,00,000 |
+| What kind of loan are you walking in for? | Personal loan |
+| How old are you? | 29 |
+| How do you earn? | Salary |
+| What hits your account in a normal month, after tax? | ₹1,10,000 |
+| What do you already pay in EMIs every month? | ₹14,000 |
+| Household spend except EMIs? | ₹42,000 (rent ₹28,000 + living) |
+| Do you know your credit score? | 750–799 (780) |
 
 **Extra (salaried path — no ITR, no shop)**
 
@@ -41,11 +53,22 @@ She can skip this whole extra list after the must-set and still get a brief (wid
 
 **Stress.** Income −25% or rate +250 bps. A wedding ticket at the top of the band is fragile. Keep the household number.
 
-### Walk-in card (what she says)
+### Negotiation card (what she holds up)
 
-> Fair for my profile on a personal loan is 10.8–12.8% (all-in APR about 11.7–13.7%). I will not agree to an EMI above ₹21,760, or a ticket above ₹7,30,000. You may still sanction ₹14–18 lakh. That is your grid. It is not what my kitchen can carry.
+Stamp: **BORROW LESS** · personal loan
 
-If they quote 14%: the offer checker tags it **a bit high / expensive**. Ask them to match 12.8% or explain the extra on the Key Facts Statement.
+> Fair for my profile on a personal loan is 10.8%–12.8% (all-in APR about 11.7%–13.7%). I will not agree to an EMI above ₹21,760, or a ticket above ₹7,30,000.
+
+| | |
+|---|---|
+| Fair rate | 10.8% – 12.8% |
+| All-in APR (fee + GST) | 11.7% – 13.7% · fee 1.8% |
+| I will take at most | ₹7,30,000 |
+| You may sanction | ₹14,50,000 – ₹17,90,000 |
+| EMI ceiling | ₹21,760 / month · 4 years |
+| Stress | Income −25% eats 42% of a thinner month |
+
+If they quote 14%: the offer checker tags it **a bit high**. Ask them to match 12.8% or explain the extra on the Key Facts Statement.
 
 ---
 
@@ -55,11 +78,29 @@ Wants ₹15,00,000 for a second stock line and a delivery vehicle. He walked in 
 
 ### Questions the app asked
 
-**Must** — cash path, not salary (9 questions): typical month ₹40,000, existing EMI ₹0, household spend ₹22,000, score **I do not know**.
+**Must** — cash path, not salary
+
+| Question | His answer |
+|---|---|
+| What is the money for? | Shop / work (stock + delivery vehicle) |
+| How much do you want to take? | ₹15,00,000 |
+| What kind of loan are you walking in for? | Personal loan |
+| How old are you? | 42 |
+| How do you earn? | My own shop |
+| Typical month take-home? | ₹40,000 |
+| Existing EMIs? | ₹0 |
+| Household spend except EMIs? | ₹22,000 |
+| Credit score? | I do not know |
 
 **Extra (shop path — no MNC, no card utilisation)**
 
-Vintage 14 years, ITR ₹4,20,000, shop ₹45,00,000, wife ₹18,000, extra earn claimed ₹18,000.
+| Question | His answer | What it moved |
+|---|---|---|
+| Years this shop has been running | 14 | Rate notch, vintage |
+| Last ITR profit, for the year | ₹4,20,000 | Lender book (ITR ÷ 12) |
+| Shop / house you could pledge | ₹45,00,000 | Routes him to **LAP** |
+| Spouse monthly take-home | ₹18,000 | Household + lender (co-apply) |
+| Extra the loan will earn each month | ₹18,000 | Household book at 35% |
 
 The demo persona also carries GST-registered = yes as a known fact from the assignment brief (not an extra question). He never saw: employer type, bonus share, card utilisation, bounce, savings (thin-savings haircut does not apply to a LAP).
 
@@ -79,9 +120,20 @@ The demo persona also carries GST-registered = yes as a known fact from the assi
 
 **Thin savings.** Two months of savings would have haircut an unsecured ticket. On a LAP the shop is the airbag, so I do not apply the same 30% cut. That is a rule I will defend.
 
-### Walk-in card (what he says)
+### Negotiation card (what he holds up)
 
-> Fair for my profile on a loan against my shop is 10.5–13.8% (all-in APR about 10.8–14.1%). I will take ₹15,00,000. I will not agree to an EMI above ₹25,000. You may sanction more against the shop. I still use ₹15 lakh. I do not know my score — if you pull a bureau and it is clean, the low end of this band is the number I want on paper.
+Stamp: **BORROW** · loan against property (shop)
+
+> Fair for my profile on a loan against my shop is 10.5%–13.8% (all-in APR about 10.8%–14.1%). I will not agree to an EMI above ₹25,000, or a ticket above ₹15,00,000.
+
+| | |
+|---|---|
+| Fair rate | 10.5% – 13.8% · unknown score, wide band, not 300 |
+| All-in APR (fee + GST) | 10.8% – 14.1% · fee 1.2% |
+| I will take at most | ₹15,00,000 |
+| You may sanction | ₹16,70,000 – ₹24,00,000 |
+| EMI ceiling | ₹25,000 / month · 9 years |
+| Product | LAP — do not walk in for a personal loan |
 
 ---
 
@@ -91,9 +143,28 @@ Wants ₹1,50,000 for an electric scooter to double delivery runs.
 
 ### Questions the app asked
 
-**Must** — informal typical month ₹26,000, existing EMI ₹8,500, spend ₹18,000, score unknown.
+**Must** — informal cash path
 
-**Extra (thin-file path)** — people you support who do not earn: two children and husband out of work, 0.5 months savings, **bounce yes**, existing rate **32%**.
+| Question | Her answer |
+|---|---|
+| What is the money for? | A scooter / bike |
+| How much do you want to take? | ₹1,50,000 |
+| What kind of loan are you walking in for? | Two-wheeler loan |
+| How old are you? | 35 |
+| How do you earn? | Daily work, gig, cash jobs |
+| Typical month take-home? | ₹26,000 |
+| Existing EMIs? | ₹8,500 |
+| Household spend except EMIs? | ₹18,000 |
+| Credit score? | I do not know |
+
+**Extra (thin-file path)**
+
+| Question | Her answer | What it moved |
+|---|---|---|
+| People you support who do not earn | 2 children + husband out of work | Buffer, leftover cash |
+| Months of savings | 0.5 | Thin-savings haircut on unsecured |
+| EMI bounce in last 12 months? | **Yes** | Don’t-borrow fire (with 32%) |
+| Interest on those EMIs | **32%** | Don’t-borrow fire (with bounce) |
 
 She never saw: MNC vs government, ITR, shop LTV, extra-earn forecast.
 
@@ -113,9 +184,19 @@ She never saw: MNC vs government, ITR, shop LTV, extra-earn forecast.
 
 **What would change this.** Gold jewellery to refinance the 32% paper; husband earning again; the app loans closed. Doubling delivery runs is a real idea. Financing it on top of bounced payday credit is how the idea fails.
 
-### Walk-in card (what she says)
+### Negotiation card (what she holds up)
 
-> Fair for me is not a new loan. If you still quote ₹70,000–₹1,20,000 on a scooter, that is a sales pitch, not a household number. I will not take a new EMI. If I borrow at all, it is only to kill the 32% app loans, not to add a vehicle on top.
+Stamp: **DON’T BORROW** · two-wheeler
+
+> Fair for me is not a new loan. If you still quote ₹70,000–₹1,20,000, that is a sales pitch, not a household number.
+
+| | |
+|---|---|
+| Fair rate | 16.0% – 21.5% (irrelevant if she should not sign) |
+| All-in APR | 17.7% – 23.3% |
+| I will take at most | **₹0** |
+| You may sanction | ₹70,000 – ₹1,20,000 · sales pitch |
+| EMI ceiling | **₹0** |
 
 ---
 
